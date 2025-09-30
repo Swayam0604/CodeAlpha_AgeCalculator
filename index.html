@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-card">
+            <header>
+                <h1>🎂 Age Calculator</h1>
+                <p>Calculate your exact age in years, months, and days</p>
+            </header>
+            
+            <div class="input-section">
+                <label for="dob">Enter your Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <button type="button" onclick="calculateAge()">Calculate Age</button>
+            </div>
+            
+            <!-- Show default zero state immediately -->
+            <div class="result-section show" id="result">
+                <div class="age-summary">
+                    <h2>🎉 Your Age Till Today</h2>
+                    <div class="age-main">
+                        <div class="age-highlight">
+                            <span class="age-big-number">0</span>
+                            <span class="age-big-label">Years Old</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="age-breakdown">
+                    <h3>Detailed Breakdown</h3>
+                    <div class="age-display">
+                        <div class="age-item">
+                            <span class="age-number">0</span>
+                            <span class="age-label">Years</span>
+                        </div>
+                        <div class="age-item">
+                            <span class="age-number">0</span>
+                            <span class="age-label">Months</span>
+                        </div>
+                        <div class="age-item">
+                            <span class="age-number">0</span>
+                            <span class="age-label">Days</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="birthday-info">
+                    <h3>🎂 Next Birthday</h3>
+                    <div class="birthday-details">
+                        <p class="next-birthday">Select your birth date to see next birthday</p>
+                        <p class="days-countdown">
+                            <span class="countdown-number">0</span>
+                            <span class="countdown-text">days to go!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="error-message" id="error">
+                <!-- Error messages will be displayed here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
